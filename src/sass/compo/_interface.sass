@@ -11,7 +11,7 @@ a
     color: white
     transition: .3s
     &:hover
-        color: $primary   
+        color: $primary
         text-decoration: none
 .prim
     color: $primary
@@ -22,6 +22,7 @@ a
     outline: 0 !important
     font-weight: 500
     font-size: 18px
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
     &-primary
         background-color: $primary
         &:hover
@@ -40,4 +41,7 @@ a
     .section
         padding: 100px 0 0
         &-title
-            font-size: 38px                               
+            font-size: 38px           
+@media (min-width: 1400px )              
+    .container
+        max-width: 1624px                    

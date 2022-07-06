@@ -16,8 +16,7 @@
         &-bg
             background-color: rgba(0, 0, 0, 0.73)
             backdrop-filter: blur(4px)
-    & li:not(:last-child)
-        margin-right: 15px
+    
 
 
 header
@@ -47,10 +46,19 @@ header
             &-social img
                 max-width: none
                 max-height: none
+        & li:not(:last-child)
+            margin-right: 15px
 
 @media (min-width: 768px )   
     header
-        background: url(../img/hero/hero-bg.jpg) no-repeat 0 0        
+        background: url(../img/hero/hero-bg.jpg) no-repeat 0 0    
+        position: relative 
+        z-index: 15
+    .navbar-bg
+        position: fixed
+        top: 0%
+        width: 100%
+        z-index: 100
 @media (min-width: 992px )
     .nav
         &bar

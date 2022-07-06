@@ -1,0 +1,32 @@
+.footer
+    &-wrapper
+        background: rgba(255, 255, 255, 0.58)
+        backdrop-filter: blur(13px)
+        padding: 30px 0
+    &-contacts
+        display: flex
+        flex-direction: column
+        &-block
+            display: flex
+            flex-direction: row
+            margin-bottom: 15px
+            justify-content: center
+        & a
+            color: $black
+            margin-left: 15px
+            text-align: center
+    &-social
+        margin-top: 15px
+        text-align: center
+    &-container
+        display: flex
+        flex-direction: column   
+@media (min-width: 768px )
+    .footer
+        &-container
+            flex-direction: row-reverse
+            justify-content: space-between 
+            align-items: center
+        &-contacts
+            &-block
+                justify-content: start
