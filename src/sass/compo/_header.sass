@@ -1,0 +1,19 @@
+.nav
+    &bar
+        background-color: rgba(0, 0, 0, 0.73)
+        // backdrop-filter: blur(4px)
+        &-toggler
+            outline: 0 !important
+        &-collapse
+            display: flex
+            justify-content: center    
+    & li:not(:last-child)
+        margin-right: 15px
+
+header
+    position: relative
+    background: url(../img/hero/hero-bg-flipped.jpg) no-repeat 0 0
+    background-position: center
+    background-size: cover
+    // после sm заменить на hero bg
+    z-index: 1
