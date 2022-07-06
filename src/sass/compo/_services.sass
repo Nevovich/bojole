@@ -1,0 +1,35 @@
+.services
+    &-item
+        position: relative
+        margin-bottom: 15px
+        &-text
+            position: absolute
+            bottom: 10px
+            width: calc(100% - 30px)
+            text-align: center
+            left: 15px
+            color: white
+            z-index: 3
+            font-size: 12px
+            &::before
+                position: absolute
+                content: ''
+                width: 100%
+                height: 200%
+                background: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, #141414 100%)
+                bottom: -10px
+                left: 0
+                z-index: -1
+        &-image
+            width: 100%
+            min-height: 125px
+            object-fit: cover
+        &-list
+            margin-top: 35px
+
+@media (min-width: 450px )
+    .services
+        &-item
+            &-text
+                font-size: 16px 
+         
