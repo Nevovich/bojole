@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i];function(){(m[i].a=m[i].a[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(85357156, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/89436903" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
     <header>
         <!-- navbar-bg и сюда сделать backdrop-filter -->
         <div class="navbar-bg">
@@ -40,10 +47,10 @@
                         <div class="collapse navbar-collapse" id="headerNavbar">
                             <!-- NaviGAYtion -->
                             <ul id="nav" class="nav">
-                                <li class="menu-item"><a href="#">Услуги</a></li>
-                                <li class="menu-item"><a href="#">Преимущества</a></li>
+                                <li class="menu-item"><a href="#services">Услуги</a></li>
+                                <li class="menu-item"><a href="#features">Преимущества</a></li>
                                 <li class="menu-item"><a href="#">Наши работы</a></li>
-                                <li class="menu-item"><a href="#">Контакты</a></li>
+                                <li class="menu-item"><a href="#how">Контакты</a></li>
                             </ul>
                             <!-- NaviGAYtion end -->
                         </div>
@@ -55,12 +62,12 @@
             <div class="hero">
                 <h1 class="hero-title">Отделочные материалы</h1>
                 <span class="hero-subtitle">для ваших интерьеров <span class="hero-subtitle-prim">под ключ</span></span>
-                <button class="btn btn-primary hero-btn">Подробнее</button>
+                <button class="btn btn-primary hero-btn" data-toggle="modal" data-target="#main-modal">Подробнее</button>
             </div>
         </div>
     </header>
     <main>
-        <section class="features-section section">
+        <section class="features-section section" id="features">
             <div class="container">
                 <div class="features">
                     <div class="text-center"><span class="section-title">При работе с нами <span class="prim">вы получаете</span></span></div>
@@ -97,7 +104,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="services">
             <div class="container">
                 <div class="services">
                     <div class="text-center"><span class="section-title">Наши <span class="prim">услуги</span></span></div>
@@ -175,27 +182,60 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
                 <div class="text-center section-title">Примеры наших работ</div>
-                <div class="slider-block">
-                    <div class="d-flex flex-column slider-item">
+                <div class="slider-block row">
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <div class="d-flex flex-column slider-item">
                         <img src="img/portfolio/portfolio-photo.jpg" alt="photo">
                         <span class="slider-item-title">Дизайн квартиры ЖК Апельсин</span>
                         <span class="slider-item-place">Москва</span>
                     </div>
-                    <div class="d-flex flex-column slider-item">
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <div class="d-flex flex-column slider-item">
                         <img src="img/portfolio/portfolio-photo.jpg" alt="photo">
                         <span class="slider-item-title">Дизайн квартиры ЖК Апельсин</span>
                         <span class="slider-item-place">Москва</span>
+                    </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <div class="d-flex flex-column slider-item">
+                        <img src="img/portfolio/portfolio-photo.jpg" alt="photo">
+                        <span class="slider-item-title">Дизайн квартиры ЖК Апельсин</span>
+                        <span class="slider-item-place">Москва</span>
+                    </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <div class="d-flex flex-column slider-item">
+                        <img src="img/portfolio/portfolio-photo.jpg" alt="photo">
+                        <span class="slider-item-title">Дизайн квартиры ЖК Апельсин</span>
+                        <span class="slider-item-place">Москва</span>
+                    </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <div class="d-flex flex-column slider-item">
+                        <img src="img/portfolio/portfolio-photo.jpg" alt="photo">
+                        <span class="slider-item-title">Дизайн квартиры ЖК Апельсин</span>
+                        <span class="slider-item-place">Москва</span>
+                    </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <div class="d-flex flex-column slider-item">
+                        <img src="img/portfolio/portfolio-photo.jpg" alt="photo">
+                        <span class="slider-item-title">Дизайн квартиры ЖК Апельсин</span>
+                        <span class="slider-item-place">Москва</span>
+                    </div>
                     </div>
                 </div>
+                <div class="text-center"><button class="btn btn-primary" style="padding: 10px 30px; margin-top: 40px;" data-toggle="modal" data-target="#main-modal">Отправить заявку</button></div>
             </div>
-        </section> -->
-        <section class="section steps-section">
+        </section>
+        <section class="section steps-section" id="how">
             <div class="container" style="margin-bottom: 60px;">
                 <div class="text-center section-title">Как<span class="prim"> мы</span> работаем</div>
-                <div class="row">
+                <div class="row justify-content-xl-between">
                     <div class="col-12  col-sm-6 col-lg-3 ml-lg-0 d-flex flex-column steps-item">
                         <span class="steps-item-counter"><span class="prim">0</span>1</span>
                         <span class="steps-item-title">Высылаете проект</span>
@@ -217,7 +257,7 @@
                         <p class="steps-item-text">Вы присылаете нам проект или визуализации или фото или просто описание в любом удобном для вас формате. Мы приступаем к формированию КП для согласования с вами. Оригиналы или аналоги, какие цены устанавливать, и т.д</p>
                     </div>
                 </div>
-                <div class="text-center"><button class="btn btn-primary" style="padding: 10px 30px; margin-top: 40px;">Отправить заявку</button></div>
+                <div class="text-center"><button class="btn btn-primary" style="padding: 10px 30px; margin-top: 40px;" data-toggle="modal" data-target="#main-modal">Отправить заявку</button></div>
                 
             </div>
             <div class="footer-wrapper">
@@ -234,7 +274,7 @@
                     </div>
                     <div>
                         <div class="text-center">
-                            <button class="btn btn-primary">Отправить заявку</button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#main-modal">Отправить заявку</button>
                         </div>
                         <div class="footer-social">
                             <a href="https://t.me/trpub">
@@ -250,6 +290,23 @@
         </section>    
     </main>
 
+
+
+<div id="main-modal" class="modal fade show" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-container container-fluid text-center">
+                <span class="modal-title">Нужна помощь?</span>
+                <p>Заполнив форму вы получите более точную информацию и <span class="prim">наш менеджер вам перезвонит</span></p>
+                <form action="#" class="form modal-form">
+                    <input type="text" class="input form-input" placeholder="Имя">
+                    <input type="text" class="input form-input" placeholder="Телефон">
+                    <button type="submit" style="margin-top: 25px; padding: 10px 48px; display: block;" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/slick.min.js"></script>
