@@ -37,3 +37,36 @@
     &-btn
         padding: 16px 40px
         margin-top: 40px
+
+@media (min-width: 768px )
+    .hero
+        padding: 100px 0 250px
+        &-title
+            font-size: 42px
+            &::before
+                left: -150px
+        &-subtitle
+            font-size: 26px
+            margin-left: 150px
+            &-prim
+                display: inline-block
+            &::before
+                top: 12px
+                left: -145px
+        &-btn
+            display: block
+@media (min-width: 992px )
+    .hero
+        &-title
+            font-size: 54px
+            &::before
+                top: -30%
+                left: -99px
+                filter: blur(90px)
+                height: 600%
+                width: 50vw
+        &-subtitle
+            font-size: 28px
+        &-btn
+            padding: 24px 80px
+        

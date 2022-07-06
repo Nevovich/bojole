@@ -32,4 +32,15 @@
         &-item
             &-text
                 font-size: 16px 
-         
+@media (min-width: 768px )
+    .services
+        &-item:not(:last-child)
+            margin-bottom: 30px              
+@media (min-width: 1200px )
+    .services
+        &-item
+            &-text
+                bottom: 20px
+                font-size: 22px
+                &::before
+                    bottom: -20px

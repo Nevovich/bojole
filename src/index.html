@@ -11,37 +11,45 @@
 <body>
     <header>
         <!-- navbar-bg и сюда сделать backdrop-filter -->
-        <!-- <div class="container"> -->
-            <nav class="navbar navbar-expand-lg justify-content-between">
-                <!-- THE CUSTOM LOGO -->
-                <a class="navbar-brand" href="#">
-                    <img src="img/header/logo.png" alt="" srcset="">
-                </a>
-                <div class="navbar-social">
-                    <a href="https://t.me/trpub">
-                        <img src="img/header/tg-logo.svg" alt="tg-logo">
+        <div class="navbar-bg">
+            <div class="navbar-container container">
+                <nav class="navbar navbar-expand-lg justify-content-between">
+                    <!-- THE CUSTOM LOGO -->
+                    <a class="navbar-brand" href="#">
+                        <img src="img/header/logo.png" alt="" srcset="">
                     </a>
-                    <a href="whatsapp://send?phone=79163419936" style="margin-left: 10px;">
-                        <img src="img/header/wa-logo.svg" alt="whatsapp-logo">
-                    </a>
-                </div>
-                <!-- THE CUSTOM LOGO end -->
-                <button id="header-navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar" aria-expanded="true" aria-label="Toggle navigation">
-                    <img src="img/header/burger-btn.svg">
-                </button>
-                    <div class="collapse navbar-collapse" id="headerNavbar">
-                        <!-- NaviGAYtion -->
-                        <ul id="nav" class="nav">
-                            <li class="menu-item"><a href="#">Услуги</a></li>
-                            <li class="menu-item"><a href="#">Преимущества</a></li>
-                            <li class="menu-item"><a href="#">Наши работы</a></li>
-                            <li class="menu-item"><a href="#">Контакты</a></li>
-                        </ul>
-                        <!-- NaviGAYtion end -->
+                    <div class="navbar-social d-flex flex-column text-right">
+                        <div class="navbar-social-tel d-none d-lg-flex flex-column">
+                            <span>Звоните ПН-ВС 9:00-21:00</span>
+                            <a href="tel:+78002224066">+7 (800) 222-40-66</a>
+                        </div>
+                        <div>
+                            <a href="https://t.me/trpub">
+                                <img src="img/header/tg-logo.svg" alt="tg-logo">
+                            </a>
+                            <a href="whatsapp://send?phone=79163419936" style="margin-left: 10px;">
+                                <img src="img/header/wa-logo.svg" alt="whatsapp-logo">
+                            </a>
+                        </div>
                     </div>
-                    <!-- headerNavbar end -->
-            </nav>
-        <!-- </div> -->
+                    <!-- THE CUSTOM LOGO end -->
+                    <button id="header-navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar" aria-expanded="true" aria-label="Toggle navigation">
+                        <img src="img/header/burger-btn.svg">
+                    </button>
+                        <div class="collapse navbar-collapse" id="headerNavbar">
+                            <!-- NaviGAYtion -->
+                            <ul id="nav" class="nav">
+                                <li class="menu-item"><a href="#">Услуги</a></li>
+                                <li class="menu-item"><a href="#">Преимущества</a></li>
+                                <li class="menu-item"><a href="#">Наши работы</a></li>
+                                <li class="menu-item"><a href="#">Контакты</a></li>
+                            </ul>
+                            <!-- NaviGAYtion end -->
+                        </div>
+                        <!-- headerNavbar end -->
+                </nav>
+            </div>
+        </div>
         <div class="container">
             <div class="hero">
                 <h1 class="hero-title">Отделочные материалы</h1>
@@ -56,28 +64,28 @@
                 <div class="features">
                     <div class="text-center"><span class="section-title">При работе с нами <span class="prim">вы получаете</span></span></div>
                     <div class="row">
-                        <div class="features-item col-12 d-flex flex-column align-items-center">
+                        <div class="features-item col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center">
                             <div class="features-list-pic">
                                 <img style="z-index: 2;" src="img/features/price.png" alt="price">
                             </div>
                             <span class="prim features-item-title">Цена от производителя</span>
                             <p class="features-item-text">Мы давно сотрудничаем со многими брендами и представляем минимальные цены для наших клиентов</p>
                         </div>
-                        <div class="features-item col-12 d-flex flex-column align-items-center">
+                        <div class="features-item col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center">
                             <div class="features-list-pic">
                                 <img style="z-index: 2;" src="img/features/speedy.png" alt="price">
                             </div>
                             <span class="prim features-item-title">Экономим ваше время</span>
                             <p class="features-item-text">Мы давно сотрудничаем со многими брендами и представляем минимальные цены для наших клиентов</p>
                         </div>
-                        <div class="features-item col-12 d-flex flex-column align-items-center">
+                        <div class="features-item col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center">
                             <div class="features-list-pic">
                                 <img style="z-index: 2;" src="img/features/delivery.png" alt="price">
                             </div>
                             <span class="prim features-item-title">Везем быстро</span>
                             <p class="features-item-text">Мы давно сотрудничаем со многими брендами и представляем минимальные цены для наших клиентов</p>
                         </div>
-                        <div class="features-item col-12 d-flex flex-column align-items-center">
+                        <div class="features-item col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center">
                             <div class="features-list-pic">
                                 <img style="z-index: 2;" src="img/features/packing.png" alt="price">
                             </div>
@@ -93,51 +101,51 @@
                 <div class="services">
                     <div class="text-center"><span class="section-title">Наши <span class="prim">услуги</span></span></div>
                     <div class="row services-item-list">
-                        <div class="col-6 services-item">
+                        <div class="col-6 col-lg-3 services-item">
                             <img class="services-item-image" src="img/services/wallpapers.jpg" alt="wallpapers photo">
                             <span class="services-item-text">Обои/фотообои</span>
                         </div>
-                        <div class="col-6 services-item">
+                        <div class="col-6 col-lg-3 services-item">
                             <img class="services-item-image" src="img/services/tile.jpg" alt="tile photo">
                             <span class="services-item-text">Плитка</span>
                         </div>
-                        <div class="col-6 services-item">
+                        <div class="col-6 col-lg-3 services-item">
                             <img class="services-item-image" src="img/services/doors.jpg" alt="doors photo">
                             <span class="services-item-text">Двери</span>
                         </div>
-                        <div class="col-6 services-item">
+                        <div class="col-6 col-lg-3 services-item">
                             <img class="services-item-image" src="img/services/decorating.jpg" alt="decorating photo">
                             <span class="services-item-text">Декоративная штукатурка</span>
                         </div>
-                        <div class="col-6 services-item">
+                        <div class="col-6 col-lg-3 services-item">
                             <img class="services-item-image" src="img/services/stucco.jpg" alt="stucco photo">
                             <span class="services-item-text">Лепнина</span>
                         </div>
-                        <div class="col-6 services-item">
+                        <div class="col-6 col-lg-3 services-item">
                             <img class="services-item-image" src="img/services/3d-panels.jpg" alt="3d-panels photo">
                             <span class="services-item-text">3D-панели</span>
                         </div>
-                        <div class="col-6 services-item">
+                        <div class="col-6 col-lg-3 services-item">
                             <img class="services-item-image" src="img/services/mosaics.jpg" alt="mosaics photo">
                             <span class="services-item-text">Мозаика</span>
                         </div>
-                        <div class="col-6 services-item">
+                        <div class="col-6 col-lg-3 services-item">
                             <img class="services-item-image" src="img/services/plumbing.jpg" alt="plumbing photo">
                             <span class="services-item-text">Инженерная сантехника</span>
                         </div>
-                        <div class="col-6 services-item">
+                        <div class="col-6 col-lg-3 services-item">
                             <img class="services-item-image" src="img/services/laminate.jpg" alt="laminate photo">
                             <span class="services-item-text">Ламинат/ковролин</span>
                         </div>
-                        <div class="col-6 services-item">
+                        <div class="col-6 col-lg-3 services-item">
                             <img class="services-item-image" src="img/services/parquet.jpg" alt="parquet photo">
                             <span class="services-item-text">Инженерная доска/паркет</span>
                         </div>
-                        <div class="col-6 services-item">
+                        <div class="col-6 col-lg-3 services-item">
                             <img class="services-item-image" src="img/services/windows.jpg" alt="windows photo">
                             <span class="services-item-text">Окна</span>
                         </div>
-                        <div class="col-6 services-item">
+                        <div class="col-6 col-lg-3 services-item">
                             <img class="services-item-image" src="img/services/fireplace.jpg" alt="fireplace photo">
                             <span class="services-item-text">Камины</span>
                         </div>
